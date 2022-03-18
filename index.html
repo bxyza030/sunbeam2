@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunBeamCars</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<header>
+
+    <h1>Rent a Car I SunBeamCars Inc.</h1>
+
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="customerform.html">Customer Form</a></li>
+
+
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <p style="background-image: url('images/mb.jpg');">
+    </p>
+
+    <div class="flex-container">
+        <div>SunBeamCars Inc.</div>
+        <div>
+            <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-log-in"></span> Log in
+            </button>
+        </div>
+    </div>
+
+    <header>
+        <div class="herobox">
+            <div class="form-container">
+                <h2 class="form-title">Find a Car</h2>
+                <form class="form" id="form">
+                    <div class="first-col">
+                        <label for="date-start">Pick up date:</label>
+                        <input type="date" id="date-start" name="date-start" />
+                        <label for="num-persons">Number of persons:</label>
+                        <input type="number" id="num-persons" name="num-persons" placeholder="Number of persons..." required />
+                    </div>
+                    <div class="second-col">
+                        <label for="date-end">Hand in date:</label>
+                        <input type="date" id="date-end" name="date-end" required />
+                        <label for="num-suitcases">Number of suitcases:</label>
+                        <select name="suitcases" id="num-suitcases" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+                    </div>
+                    <button type="submit" class="search-btn" id="search-btn">
+                Search
+              </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cars"></section>
+    </main>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
